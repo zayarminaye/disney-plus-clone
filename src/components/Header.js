@@ -48,12 +48,11 @@ export default function Header() {
     return (
         <Nav>
             <Logo src="/images/logo.svg" />
-            {
-                !userName ? (
-                    <LoginContainer>
+            
+                    {/* <LoginContainer>
                         <Login onClick={signIn}>Login</Login>
-                    </LoginContainer>
-                ) : 
+                    </LoginContainer> */}
+                
                 <>
                     <NavMenu>
                 <a>
@@ -81,9 +80,9 @@ export default function Header() {
                     <span>SERIES</span>
                 </a>
             </NavMenu>
-            <UserImg onClick={signOut} src={userPhoto} />
+            {/* <UserImg onClick={signOut} src={userPhoto} /> */}
                 </>
-            }
+            
             
         </Nav>
     )
